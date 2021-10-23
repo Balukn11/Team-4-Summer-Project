@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surface Crack detection</title>
+
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+    <div class="panel pricing-table big-container">
+
+
+
+        <div class="pricing-plan">
+          <div class="" id="header">
+            <h1>Surface Crack Detection</h1>
+          </div>
+
+            <img src="skyscraper.png" alt="" class="building-img">
+            <form id="upload-file" method="post" enctype="multipart/form-data">
+                <label for="imageUpload" class="upload-label btn btn-primary">
+                    <!-- Upload image -->
+                    Upload image
+                </label>
+                <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+            </form>
+
+        </div>
+        <div class="pricing-plan sideBox">
+
+
+          <div class="side-bottomContainer">
+            <button type="button" class="btn btn-primary  " id="predict-button">Predict!</button>
+          </div>
+          <div class="side-topContainer">
+            <div class="image-section side-topContainer image-box "  style="display: none;">
+                <div class="img-preview">
+                    <div id="imagePreview"></div>
+                </div>
+                  <label for=""class="btn text"> output is printed</label>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+    </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
