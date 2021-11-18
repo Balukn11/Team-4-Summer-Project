@@ -52,8 +52,3 @@ $(document).ready(function () {
     });
 
 });
-
-
-//upload image
-
-let img_src = document.getElementById('imgSrc');
