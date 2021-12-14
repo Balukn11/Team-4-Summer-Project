@@ -1,0 +1,26 @@
+import matplotlib.pyplot as plt
+import numpy as np
+a=0.2
+
+x=["100","75","50","25"]
+lr_0_01=[99.2,49.8,98.9,92.8]
+lr_0_10=[96.7,50.1,49.5,84.5]
+lr_1_00=[50.5,49.8,50.4,64.6]
+
+bar1=np.arange(len(x))
+bar2=[i+a for i in bar1]
+bar3=[i+a for i in bar2]
+
+plt.bar(bar1,lr_0_01,a,label="0.01")
+plt.bar(bar2,lr_0_10,a,label="0.10")
+plt.bar(bar3,lr_1_00,a,label="1.00")
+
+plt.xlabel("Image dataset")
+plt.ylabel("Model Accuracy")
+plt.title("Node Size: 32" )
+plt.xticks(bar1+a,x)
+
+#plt.grid()
+plt.legend()
+plt.savefig('ns_32.png')
+plt.show
